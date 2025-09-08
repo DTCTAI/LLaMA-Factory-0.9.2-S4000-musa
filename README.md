@@ -53,7 +53,7 @@ docker pull musa-pytorch-dev-public:rc3.1.0-v1.3.0-S4000-py310
 ### 4️⃣ 下载源码
 ```bash
 cd /data
-git clone https://github.com/xxxx/LLaMA-Factory-0.9.2-S4000-musa.git
+git clone https://github.com/DTCTAI/LLaMA-Factory-0.9.2-S4000-musa.git
 ```
 
 ---
