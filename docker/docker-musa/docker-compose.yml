@@ -1,0 +1,18 @@
+services:
+  llama_musa:
+    image: musa_s4000_llama_factory:0.1
+    hostname: llama_musa
+    ports:
+      - "7860:7860"
+    environment:
+      - MTHREADS_VISIBLE_DEVICES=1
+      - USE_MODELSCOPE_HUB=1
+      - MODELSCOPE_CACHE=/data/LLaMA-Factory-0.9.2-S4000-musa/Models
+      - PYTHONPATH=":"
+      - DISABLE_VERSION_CHECK=1
+    volumes:
+      - /data/LLaMA-Factory-0.9.2-S4000-musa:/data/LLaMA-Factory-0.9.2-S4000-musa
+    tty: true
+    # shm_size: "16gb"  # ipc: host is set
+    stdin_open: true
+    restart: unless-stopped

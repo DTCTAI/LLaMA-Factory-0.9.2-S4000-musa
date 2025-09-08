@@ -1,0 +1,12 @@
+curl 127.0.0.1:1025/v1/chat/completions -d '{
+"model": "Qwen3",
+"messages": [{
+"role": "user",
+"content": [{"type": "text", "text": "请编写一个C++程序，程序内容是实现二叉树先序遍历算法"}]}],
+"max_tokens": 512,
+"do_sample": true,
+"repetition_penalty": 1.00,
+"temperature": 0.9,
+"top_p": 0.95,
+"top_k": 1
+}'

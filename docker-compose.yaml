@@ -1,0 +1,24 @@
+version: '3.7'
+# ipad 容器通用设置
+x-my-dns-common: &my-dns-common
+  image: s4000_llama_factory:0.2
+  expose:
+    - "5555"
+  ports:
+    - "7680:7680"
+  volumes:
+    - /root/repair_register:/root/repair_register:rw
+  command: bash /root/repair_register/run.sh
+
+  logging:
+    driver: "json-file"
+    options:
+      max-size: "30m"
+      max-file: "3"
+  extra_hosts:
+    - "WXslideApi:43.156.82.133"
+
+services:
+  container_1:
+    <<: *my-dns-common
+    hostname: container_1

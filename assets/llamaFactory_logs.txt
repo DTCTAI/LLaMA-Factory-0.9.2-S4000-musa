@@ -1,0 +1,36 @@
+NotImplementedError: Unknown device for graph fuser
+
+
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError:
+
+
+
+
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/opt/conda/envs/py310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+=========================================================
+/root/llamaFctoryTest/src/llamafactory/launcher.py FAILED
+---------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+---------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-05-29_17:33:01
+  host      : 32989e1b5727
+  rank      : 2 (local_rank: 2)
+  exitcode  : -6 (pid: 9264)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 9264
+
+
+
+Qwen2.5 一轮训练时间
+0.5B 30分钟 
+3B 40分钟
+7B 53分钟
+14B 未测试
+32B
+

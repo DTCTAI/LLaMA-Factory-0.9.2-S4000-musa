@@ -1,0 +1,11 @@
+modelscope download --model ZhipuAI/chatglm3-6b --revision master --max-workers 16
+
+modelscope download --model Qwen/Qwen2.5-3B --revision master --max-workers 16
+
+
+modelscope download --model Qwen/Qwen2.5-3B --revision master --max-workers 16 --cache_dir C:\Users\10787\Desktop\LLM\LLaMA-Factory-0.9.2\Models
+
+
+modelscope download --model Qwen/Qwen2.5-1.5B-Instruct --revision master --max-workers 16 --cache_dir C:\Users\10787\Desktop\LLM\LLaMA-Factory-0.9.2\Models
+
+
