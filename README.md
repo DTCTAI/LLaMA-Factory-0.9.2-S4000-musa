@@ -1,9 +1,19 @@
 # 🚀 LLaMA-Factory-S4000-MUSA
 
-[![License](https://img.shields.io/github/license/xxxx/LLaMA-Factory-S4000-MUSA)](./LICENSE)
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue)]()
-[![Torch](https://img.shields.io/badge/torch-musa-green)]()
-[![Docker](https://img.shields.io/badge/docker-ready-blue)]()
+<p align="center">
+  <img src="./assets/dtct.png" alt="浙江德塔森特总部研发中心" width="200"/>
+</p>
+
+<p align="center">
+  <em>浙江德塔森特总部研发中心</em>
+</p>
+
+<p align="center">
+  <a href="./LICENSE"><img src="https://img.shields.io/github/license/xxxx/LLaMA-Factory-S4000-MUSA" alt="License"/></a>
+  <img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="Python"/>
+  <img src="https://img.shields.io/badge/torch-musa-green" alt="Torch"/>
+  <img src="https://img.shields.io/badge/docker-ready-blue" alt="Docker"/>
+</p>
 
 > 基于 [LLaMA-Factory0.9.2](https://github.com/hiyouga/LLaMA-Factory) 的魔改版本，适配 **摩尔线程 S4000 GPU (MUSA 架构)**，支持大语言模型的训练、微调与推理，并提供 WebUI 交互界面。
 
@@ -13,11 +23,10 @@
 
 - 🔧 **MUSA 适配**：支持 `torch_musa`，可直接运行在摩尔线程 S4000 上  
 - 🐳 **Docker 一键部署**：提供官方镜像与构建脚本，环境可快速启动  
-- 🌐 **国内源模型下载**：已切换为Modelscope通道  
+- 🌐 **国内源模型下载**：已切换为 Modelscope 通道  
 - ⚡ **性能优化**：显存环境变量配置、源码兼容性补丁  
-- 🧩 **模型适配**：已测试并修复 **Qwen2.5-3B** 等模型  
+- 🧩 **模型适配**：已测试并修复 **Qwen2.5-3B** 等模型
 
----
 
 ## 📦 快速开始
 
@@ -155,3 +164,7 @@ LLaMA-Factory-0.9.2-S4000-musa
 ## 📜 License
 本项目基于 [Apache 2.0 License](./LICENSE) 开源。  
 原项目版权归 [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) 所有。  
+
+## 联系方式
+- 公司官网: [https://www.dtctcn.com/](https://www.dtctcn.com/)
+- 产品服务电话: 400-865-5169
